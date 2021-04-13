@@ -1,0 +1,97 @@
+{% extends 'main/base.html' %}
+{% block content %}
+<body>
+<h2>Recommended Titles </h2>
+</body>
+
+{% for item in result2 %}
+<table id="List3" border="1" class="dataframe" align="center">
+  <thead>
+    <tr style="text-align: center;">
+      <th>ID</th><th>Tv Title</th>
+    </tr>
+  </thead>
+  <tbody>
+     <tr>
+        <td> 1 </td> <td> {{ item.0}} </td>
+    </tr>
+       <tr>
+        <td> 2 </td> <td> {{ item.1}} </td>
+    </tr>
+       <tr>
+        <td> 3 </td> <td> {{ item.2}} </td>
+    </tr>
+       <tr>
+        <td> 4 </td> <td> {{ item.3}} </td>
+    </tr>
+       <tr>
+        <td> 5 </td> <td> {{ item.4}} </td>
+    </tr>
+       <tr>
+        <td> 6 </td> <td> {{ item.5}} </td>
+    </tr>
+       <tr>
+        <td> 7 </td> <td> {{ item.6}} </td>
+    </tr>
+       <tr>
+        <td> 8 </td> <td> {{ item.7}} </td>
+    </tr>
+       <tr>
+        <td> 9 </td> <td> {{ item.8}} </td>
+    </tr>
+       <tr>
+        <td> 10 </td> <td> {{ item.9}} </td>
+    </tr>
+  </tbody>
+</table>
+{% endfor %}
+&nbsp;
+{% for key, value in result %}
+<table id="List2" border="1" class="dataframe" align="center">
+  <thead>
+    <tr style="text-align: center;">
+      <th>ID</th><th>Movie Title</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+        <td> 1 </td> <td> {{ value.0}} </td>
+    </tr>
+    <tr>
+        <td> 2 </td> <td> {{ value.1 }} </td>
+    </tr>
+    <tr>
+        <td> 3 </td> <td> {{ value.2 }} </td>
+    </tr>
+    <tr>
+        <td> 4 </td> <td> {{ value.3 }} </td>
+    </tr>
+    <tr>
+        <td> 5 </td> <td> {{ value.4 }} </td>
+    </tr>
+    <tr>
+        <td> 6 </td> <td> {{ value.5 }} </td>
+    </tr>
+    <tr>
+        <td> 7 </td> <td> {{ value.6 }} </td>
+    </tr>
+    <tr>
+        <td> 8 </td> <td> {{ value.7 }} </td>
+    </tr>
+    <tr>
+        <td> 9 </td> <td> {{ value.8 }} </td>
+    </tr>
+    <tr>
+        <td> 10 </td> <td> {{ value.9 }} </td>
+    </tr>
+      </tbody>
+</table>
+{% endfor %}
+
+
+<form action="home">
+        {% csrf_token %}
+         Return
+        <input type="submit" name="return">
+      </form>
+{% endblock %}

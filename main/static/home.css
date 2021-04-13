@@ -1,0 +1,25 @@
+table {
+    border-collapse: collapse;
+    border-width: medium;
+    margin-bottom: 100px;
+    margin-left:auto; 
+    margin-right:auto;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+input {
+    color: rgb(70, 131, 180);
+    padding-top: 14px;
+}
+
+p {
+    background-color: rgb(144, 164, 180);
+    font-size: 20px;
+    padding: 10px;
+    color:white;
+    border-radius: 10px;
+}

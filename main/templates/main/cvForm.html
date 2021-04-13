@@ -1,0 +1,20 @@
+{% extends 'main/base.html' %}
+{% block content %}
+<h1>Welcome to your Profile {{name}}</h1>>
+<div class="container">
+    <form action=home" method="">
+      <fieldset>
+        <legend>Form</legend>
+        {% csrf_token %}
+        {{ my_form.as_p }}
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </fieldset>
+    </form>
+</div>
+
+<form action="home">
+        {% csrf_token %}
+         Return
+        <input type="submit" name="return">
+      </form>
+{% endblock %}

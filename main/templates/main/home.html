@@ -1,0 +1,154 @@
+{% extends 'main/base.html' %}
+
+{% block title %}
+Home
+{% endblock %}
+
+{% block head %}
+  <link rel="stylesheet" href="static/home.css">
+{% endblock%}
+{% load static %}
+{% block content %}
+<body>
+ <link rel="stylesheet" href="static/home.css">
+    <p>Click On The Movie Title To See Recommended Titles</p>
+  <!-- Button on the home page to toggle to the profile page -->
+  <!-- <form action="profile" method="post">
+    {% csrf_token %}
+    {{request.user.username}} Profile
+    <input type="submit" name="profile">
+  </form> -->
+  <table id="List" border="1" class="dataframe">
+    <thead>
+      <tr style="text-align: left;">
+        <th></th>
+        <th>Movie Title</th>
+        <th>Vote Average</th>
+        <th>Score</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>1</th>
+        <td>
+          <form action="display" method="post">
+            {% csrf_token %}
+            <input type="submit" value="The Shawshank Redemption" name="title" 
+            style="border: none; font-size: large; cursor: pointer !important; background-color: transparent">
+          </form>
+        </td>
+        <td>8.5</td>
+        <td>8.059258</td>
+      </tr>
+      <tr>
+        <th>2</th>
+        <td>
+          <form action="display" method="post">
+            {% csrf_token %}
+            <input type="submit" value="Fight Club" name="title" 
+            style="border: none; font-size: large; cursor: pointer !important; background-color: transparent">
+          </form>
+        </td>
+        <td>8.3</td>
+        <td>7.939256</td>
+      </tr>
+      <tr>
+        <th>3</th>
+        <td>
+          <form action="display" method="post">
+            {% csrf_token %}
+            <input type="submit" value="The Dark Knight" name="title" 
+            style="border: none; font-size: large; cursor: pointer !important; background-color: transparent">
+          </form>
+        </td>
+        <td>8.2</td>
+        <td>7.920020</td>
+      </tr>
+      <tr>
+        <th>4</th>
+        <td>
+          <form action="display" method="post">
+            {% csrf_token %}
+            <input type="submit" value="Pulp Fiction" name="title" 
+            style="border: none; font-size: large; cursor: pointer !important; background-color: transparent">
+          </form>
+        </td>
+        <td>8.3</td>
+        <td>7.904645</td>
+      </tr>
+      <tr>
+        <th>5</th>
+        <td>
+          <form action="display" method="post">
+            {% csrf_token %}
+            <input type="submit" value="Inception" name="title" 
+            style="border: none; font-size: large; cursor: pointer !important; background-color: transparent">
+          </form>
+        </td>
+        <td>8.1</td>
+        <td>7.863239</td>
+      </tr>
+      <tr>
+        <th>6</th>
+        <td>
+          <form action="display" method="post">
+            {% csrf_token %}
+            <input type="submit" value="The Godfather" name="title" 
+            style="border: none; font-size: large; cursor: pointer !important; background-color: transparent">
+          </form>
+        </td>
+        <td>8.4</td>
+        <td>7.851236</td>
+      </tr>
+      <tr>
+        <th>7</th>
+        <td>
+          <form action="display" method="post">
+            {% csrf_token %}
+            <input type="submit" value="Interstellar" name="title" 
+            style="border: none; font-size: large; cursor: pointer !important; background-color: transparent">
+          </form>
+        </td>
+        <td>8.1</td>
+        <td>7.809479</td>
+      </tr>
+      <tr>
+        <th>8</th>
+        <td>
+          <form action="display" method="post">
+            {% csrf_token %}
+            <input type="submit" value="Forrest Gump" name="title" 
+            style="border: none; font-size: large; cursor: pointer !important; background-color: transparent">
+          </form>
+        </td>
+        <td>8.2</td>
+        <td>7.803188</td>
+      </tr>
+      <tr>
+        <th>9</th>
+        <td>
+          <form action="display" method="post">
+            {% csrf_token %}
+            <input type="submit" value="The Lord of the Rings: The Return of the King" name="title" 
+            style="border: none; font-size: large; cursor: pointer !important; background-color: transparent;">
+          </form>
+        </td>
+        <td>8.1</td>
+        <td>7.727243</td>
+      </tr>
+      <tr>
+        <th>10</th>
+        <td>
+          <form action="display" method="post">
+            {% csrf_token %}
+            <input type="submit" value="The Empire Strikes Back" name="title" 
+            style="border: none; font-size: large; cursor: pointer !important; background-color: transparent;">
+          </form>
+        </td>
+        <td>8.2</td>
+        <td>7.697884</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+{% endblock %}

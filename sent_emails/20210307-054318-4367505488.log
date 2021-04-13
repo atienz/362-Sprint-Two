@@ -1,0 +1,25 @@
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Subject: Password reset on 127.0.0.1:8000
+From: webmaster@localhost
+To: allison.atienza@gmail.com
+Date: Sun, 07 Mar 2021 05:43:18 -0000
+Message-ID: <161509579876.38725.1085231540928946111@allisons-air.home>
+
+
+You're receiving this email because you requested a password reset for your user account at 127.0.0.1:8000.
+
+Please go to the following page and choose a new password:
+
+http://127.0.0.1:8000/reset/MTU/aj4l86-18be1b843afb3dbfc2d62f2797560f25/
+
+Your username, in case you’ve forgotten: atienza
+
+Thanks for using our site!
+
+The 127.0.0.1:8000 team
+
+
+
+-------------------------------------------------------------------------------

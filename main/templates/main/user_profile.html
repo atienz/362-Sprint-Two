@@ -1,0 +1,16 @@
+{% extends 'main/base.html' %}
+{{form}}
+{% block content %}
+{% if request.user.is_authenticated %}
+
+<h> {% block title %} Profile {% endblock %}</h>
+<img src="coachPotato.jpg" style="width:300px;height:400px;">
+<p> Username: {{request.user.username}}</p>
+<p1>Email: {{request.user.email}} <br> </p1>
+
+{% else %}
+
+<p> Login to view your details</p>
+
+{% endif %}
+{% endblock %}
